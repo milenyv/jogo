@@ -1,0 +1,49 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #1f1b24, #3c0b2d);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #2a1e2f;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 100, 0.3);
+      text-align: center;
+      max-width: 420px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      color: #ff4d6d;
+      margin-bottom: 1rem;
+    }
+    #desafio {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      color: #ffdee3;
+      min-height: 80px;
+    }
+    select, button {
+      padding: 0.7rem 1rem;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    select {
+      background-color: #4b2a3e;
+      color: #fff;
+    }
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #e84162;
+    }
