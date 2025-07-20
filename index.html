@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Heat Game - Desafios Interativos</title>
+  <meta charset="UTF-8">
+  <title>Seleção de Jogo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="card">
-        <h1>Qual jogo gostaria?</h1>
-      <select id="menu">
-    <option value="">Selecione</option>
-    <option value="../desafio/index.html">Desafios</option>
-    <option value="../roleta misteriosa/index.html">Roleta misteriosa</option>
-    <option value="../roda_intimidade/index.html">Roda da intimidade</option>
-</select>
+  <div class="card">
+    <h1>Qual jogo gostaria?</h1>
+    <div class="custom-select-wrapper">
+      <div class="custom-select" onclick="toggleOptions()">
+        <span id="selected-option">Selecione</span>
+        <span class="arrow">&#9662;</span>
+      </div>
+      <ul class="options" id="options-list">
+        <li onclick="selectOption('Desafios', '../desafio/index.html')">Desafios</li>
+        <li onclick="selectOption('Roleta misteriosa', '../roleta misteriosa/index.html')">Roleta misteriosa</li>
+        <li onclick="selectOption('Roda da intimidade', '../roda_intimidade/index.html')">Roda da intimidade</li>
+      </ul>
     </div>
-
-    <script>
-    document.getElementById("menu").addEventListener("change", function () {
-        const url = this.value;
-        if (url) {
-            window.location.href = url;
-        }
-    });
-</script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
