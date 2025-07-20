@@ -54,7 +54,8 @@
         "Morda ou lamba os glúteos dele(a) por 10 segundos.",
         "Escolha um lugar do corpo e peça para ele(a) beijar lentamente.",
         "Beije até deixar arrepiado(a).",
-        "Sente no colo e mova lentamente o quadril."
+        "Sente no colo e mova lentamente o quadril.",
+        "Explore os pontos fracos do parceiro(a)"
       ],
       extremo: [
         "Faça sexo oral por 1 minuto.",
@@ -92,3 +93,4 @@
       const desafio = lista[Math.floor(Math.random() * lista.length)];
       document.getElementById('desafio').textContent = desafio;
     }
+

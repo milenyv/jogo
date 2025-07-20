@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Heat Game - Desafios Interativos</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Qual jogo gostaria?</h1>
+      <select id="menu">
+    <option value="">Selecione</option>
+    <option value="../desafio/index.html">Desafios</option>
+    <option value="../roleta misteriosa/index.html">Roleta misteriosa</option>
+    <option value="../roda_intimidade/index.html">Roda da intimidade</option>
+</select>
+    </div>
+
+    <script>
+    document.getElementById("menu").addEventListener("change", function () {
+        const url = this.value;
+        if (url) {
+            window.location.href = url;
+        }
+    });
+</script>
+</body>
+</html>
